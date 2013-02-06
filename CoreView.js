@@ -40,14 +40,6 @@ define(function() {
 
 		unbind: function() {
 			this.undelegateEvents();
-		},
-
-		mask: function() {
-			(this.maskEl ? this.$el.find(this.maskEl) : this.$el).mask();
-        },
-
-        unmask: function() {
-            (this.maskEl ? this.$el.find(this.maskEl) : this.$el).unmask();
-        },
+		}
 	});
 });
