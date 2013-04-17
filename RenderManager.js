@@ -27,17 +27,13 @@ define(function() {
 			 * @returns {undefined}
 			 */
 			removeUnder: function(view) {
-				
 				var rootEl = $(view.el);
 
 				for (var i = this.views.length - 1; i >= 0; i--) {
 					var activeView = this.views[i],
 						el = $(activeView.el);
 
-					if(rootEl.get(0) == el.get(0)) { //is equal
-						activeView.unbind();
-						this.views.splice(this.views.indexOf(activeView), 1);
-					} else if(rootEl.find(el).size() > 0) {
+					if(rootEl.get(0) == el.get(0) || rootEl.find(el).size() > 0) {
 						activeView.unbind();
 						this.views.splice(this.views.indexOf(activeView), 1);
 					}
