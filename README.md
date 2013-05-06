@@ -32,7 +32,7 @@ require([
 		(new v1).render();
 
 		setTimeout(function() {
-			(new v2).render(); // renders second view and automatically removes View "v1" and unbinds events
+			(new v2).render(); //renders second view and automatically removes View "v1" and unbinds events
 		}, 5000);
 	});
 ```
