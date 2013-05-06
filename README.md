@@ -1,6 +1,6 @@
 Backbone.RenderManager
 ======================
-
+```javascript
 	require([
 		"CoreView",
 		"RenderManager"
@@ -35,3 +35,4 @@ Backbone.RenderManager
 			(new v2).render(); // renders second view and automatically removes View "v1" and unbinds events
 		}, 5000);
 	});
+```
